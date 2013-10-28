@@ -3,7 +3,8 @@
 import phue
 import random
 import time
-b = phue.Bridge('192.168.0.213')
+import sys
+b = phue.Bridge(sys.argv[1])
 
 # If the app is not registered and the button is not pressed, press the button and call connect() (this only needs to be run a single time)
 b.connect()
